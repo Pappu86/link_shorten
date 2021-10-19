@@ -12,6 +12,7 @@ const UrlSorten = () => {
     const baseUrl = 'http://localhost:3000/';
 
     useEffect(() => {
+        // Get all shorted link list
         axios.get('http://localhost:4000/allShortenUrls').then(res => {
             const { shortenUrls } = res.data || [];
             setShortenURLs(shortenUrls);

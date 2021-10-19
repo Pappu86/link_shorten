@@ -23,7 +23,8 @@ connection.once('open', () => {
   console.log('Mongo DB database connection established successfully!');
 });
 
-//Routes
+// Routes
+// Generate short url link
 app.post('/generateShortenUrl', (req, res) => {
   const { url } = req.body;
   let randomId = makeid(6);
@@ -43,6 +44,7 @@ app.post('/generateShortenUrl', (req, res) => {
 
 });
 
+// Redirect origin url from short link
 app.get('/redirectOriginUrl/:slug', (req, res) => {
   const { slug } = req.params;
   const existsUrlInfo = ShortenUrl.findOne({ slug: slug }, function (err, shorten) {
@@ -58,6 +60,7 @@ app.get('/redirectOriginUrl/:slug', (req, res) => {
   });
 });
 
+// Get all short link Urls
 app.get('/allShortenUrls', (req, res) => {
   const shortenUrls = ShortenUrl.find({}, function (err, docs) {
     if (err) {
