@@ -67,7 +67,7 @@ const UrlSorten = () => {
                     {isCopy ? (
                         <button className="btn btn-primary shorten-btn" onClick={handelCopyShortenUrl}>Copy</button>
                     ) : (
-                        <button className="btn btn-primary shorten-btn" onClick={handelShortenUrl}>Sorten</button>
+                        <button className="btn btn-primary shorten-btn" onClick={handelShortenUrl}>Shorten</button>
                     )}
                 </div>
                 {errMsg &&
