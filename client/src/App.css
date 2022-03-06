@@ -1,73 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 
-#root{
+#root {
   height: 100%;
 }
 
-body{
-  font-family: 'Roboto Condensed', sans-serif;
+body {
+  font-family: "Roboto Condensed", sans-serif;
   background-color: #f1f1f1;
 }
 
 .App {
-  height: 100%;  
-  display: flex;    
+  height: 100%;
+  display: flex;
   background-color: #f1f1f1;
   /* justify-content: center;
   text-align: center;
   align-items: center; */
 }
 
-.pull-left{
+.pull-left {
   float: left;
 }
 
-.pull-right{
+.pull-right {
   float: right;
 }
 
-.text-right{
+.text-right {
   text-align: right;
 }
 
-.page-title{
+.page-title {
   padding: 10px;
   color: #0d6efd;
   text-align: center;
 }
 
-.sorten-link{
-  width: 90%;
+.sorten-link {
+  width: 89%;
   float: left;
   margin-right: 20px;
   padding: 12px;
 }
 
-.mt-20{
+.mt-20 {
   margin-top: 20px;
 }
 
-.mr-20{
+.mr-20 {
   margin-right: 20px;
 }
 
-.url-row{
+.url-row {
   padding: 15px;
   border-bottom: 1px solid #eee;
 }
 
-.url-row:last-child{
+.url-row:last-child {
   border-bottom: none;
 }
 
-.shorten-btn{
+.shorten-btn {
   padding: 10px 32px;
   font-weight: 600;
 }
 
-.loader-area{
+.loader-area {
   margin: 0% auto;
-    position: absolute;
-    top: 35%;
-    left: 45%;
+  position: absolute;
+  top: 35%;
+  left: 45%;
 }
